@@ -1,0 +1,53 @@
+{% include "header.html" %}
+<div class="container">
+    <h1>Bootstrap starter template</h1>
+    <h2></h2>
+    <h3>xxxx</h3>
+    <h4>{{ timebefore }}</h4>
+    <h4>{{ timeafter }}</h4>
+    <table class="table table-hover">
+        <caption>
+            num:&nbsp;
+            <span>{{ num }}</span>
+        </caption>
+        <colgroup>
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="300">
+        <col width=""></colgroup>
+    <tbody>
+        <tr class="thead">
+            <th>id</th>
+            <th>title</th>
+            <th>finished</th>
+            <th>post_date</th>
+            <th>action</th>
+        </tr>
+         {% for item in todos %}
+        <tr>
+            <td>
+                <span>{{ item.id }}</span>
+            </td>
+            <td>
+                <span>{{ item.title }}</span>
+            </td>
+            <td>
+                <span>{{ item.finished }}</span>
+            </td>
+            <td>
+                <span>{{ item.post_date }}</span>
+            </td>
+            <td>
+                <a href="#">ok</a>
+            <a href="/todo/{{ item.id }}/edit">edit</a>
+            <a href="/todo/{{ item.id }}/delete" onclick="return confirm('are you sure ??')">delete</a>
+            </td>
+        </tr>
+       {% endfor %}
+    </tbody>
+</table>
+</div>
+<!-- /container -->
+</body>
+</html>

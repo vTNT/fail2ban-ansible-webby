@@ -1,0 +1,111 @@
+@charset "utf-8";
+html{
+    height:100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing:antialiased;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    text-align:center;
+    color:#404040;
+    font:14px/1.5 Helvetica,arial;
+}
+h1,h2,h3,h4,h5,h6,p,figure,form{
+    margin:0;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img{
+    border:0;
+    vertical-align:middle;
+    -ms-interpolation-mode: bicubic;
+}
+a{
+    text-decoration:none;
+    color:#29B4F0;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover{
+    color:#017CB9;
+    text-decoration:underline;
+}
+
+/* ul ol dl */
+ul,li,ol{
+    margin: 0;
+    padding:0;
+    list-style: none outside none;
+}
+ul.has-style li,ol li{
+    margin-left:25px;
+}
+ul.has-style li{
+    list-style:disc;
+}
+ol li{
+    list-style:decimal;
+}
+ul.inline-style li{
+    float:left;
+    display:inline;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.wrap_top_nav{
+    background-color:#333;
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+	height:40px;
+}
+#top_nav{
+    width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+#top_nav a{
+    font-size:16px;
+	line-height:40px;
+	float:left;
+	margin-right:20px;
+	color:#999;
+	text-decoration:none;
+}
+#top_nav a:hover{
+    color:#fff;
+}
+#top_nav li:nth-child(1) a{
+    /*background-image:url(http://www.w3cplus.com/sites/all/themes/marvin/logo.png);*/
+	background-position: 0 -12px;
+    background-repeat: no-repeat;
+    background-size: 68px 60px;
+	padding-left:74px;
+	color:#fff;
+	width:100px;
+	overflow:hidden;
+}
+
+#read{
+    position:absolute;
+	right:0;
+	top:0;
+}
+#header{
+    text-align:center;
+}
+#header .white{
+    color:#fff;
+}
+#header .blank{
+    color:#444;
+}

@@ -1,0 +1,135 @@
+{% include "header.html" %}
+<div class="container">
+    <form method="post" action="" class="form-horizontal" id="frmPlaybook">
+            <input type="hidden" value="cOsUipO7C7qQKo99naYgyU9jNaec7YWo" name="csrfmiddlewaretoken">
+
+
+            <div class="row">
+            <div class="span3">
+                <div class="box well">
+                    <header>
+                        <h5>hosts</h5>
+                    </header>
+                    <div class="body">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span9">
+
+                <div class="box well">
+
+                    <div class="control-group">
+                        <label class="control-label">解封IP</label>
+                        <div class="controls">
+                            <input type="text" name="searchword" style="height:30px;line-height:30px;">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">主机</label>
+                        <div class="controls">
+                            <input type="text" name="searchword" style="height:30px;line-height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">行为</label>
+                        <div class="controls">
+                           <input type="text" name="searchword" class="input-medium search-query" style="height:30px;line-height:30px;"> 
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
+                        <label class="control-label">任务列表</label>
+                        <div class="controls">
+                            <textarea rows="10" class="span6 ui-droppable" required="required" id="tasks" name="tasks"></textarea>
+                        </div>
+                    </div>
+
+                    <div id="ad_container" class="accordion">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a href="#ad_collapse" data-parent="#ad_container" data-toggle="collapse" class="accordion-toggle">
+                                    高级设置
+                                </a>
+                            </div>
+                            <div class="accordion-body collapse" id="ad_collapse">
+                                <div class="accordion-inner">
+                                    <div id="use_sudo" class="control-group">
+                                        <label class="control-label">Use sudo</label>
+                                        <div class="controls">
+                                            <input type="checkbox" id="sudo_checkbox" name="use_sudo">
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="control-group">
+                                        <label class="control-label">Forks</label>
+                                        <div class="controls">
+                                            <input type="text" value="0" class="span1" name="forks">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Limit</label>
+                                        <div class="controls">
+                                            <input type="text" value="" class="span3" name="limit">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Check Model</label>
+                                        <div class="controls">
+                                            <input type="checkbox" name="job_type">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label for="inputPlaybook" class="control-label">Extra Vars</label>
+                                        <div class="controls">
+                                            <textarea class="span3" required="required" name="extra_vars"> </textarea>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="hidden" value="None" name="template_pk">
+                            <button class="btn btn-primary" id="btn_execute" onclick="return confirm('are you sure ??')" type="button">执行</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+</div>
+<!-- /container -->
+<!--
+<script type="text/javascript" src="{{ config.static }}/bootstrap/js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{{ config.static }}/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ config.static }}/bootstrap/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{{ config.static }}/bootstrap/js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    </script>
+</body>
+</html>
+-->
+{% include "footer.html" %}
