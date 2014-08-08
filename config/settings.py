@@ -8,7 +8,7 @@
 import web
 from web.contrib.template import render_jinja
 
-db = web.database(dbn='mysql', db='fail2ban', user='root', pw='ename110', host='192.168.200.209')
+db = web.database(dbn='mysql', db='fail2ban', user='root', pw='110', host='192.168.200.209')
 
 render = render_jinja(
     'templates',
